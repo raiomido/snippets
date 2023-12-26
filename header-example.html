@@ -1,0 +1,47 @@
+<div class="fixed z-20 inset-x-0 text-white" id="primary-menu">
+    <div id="main_navigation">
+        <div class="relative dark:bg-gray-900 dark:text-blue-100">
+            <div class="default-container py-2">
+                <div class="flex items-center justify-between space-x-3 sm:space-x-0">
+                    <div>
+                      <a class="block h-10 w-auto sm:h-12" href="#">
+                          <img class="h-full w-full" src="#" alt="My App Name">
+                      </a>
+                    </div>
+                    <div class="flex space-x-3 xl:space-x-8">
+                        <nav class="main-menu hidden xl:flex xl:items-center xl:flex-row xl:space-x-8 flex-col">
+                            <a href="#" class="nav-link font-bold">Home</a>
+                            <a href="#" class="nav-link font-bold">Blog</a>
+                            <a href="#" class="nav-link font-bold">Login</a>
+                            <a href="#" class="btn-secondary xl:py-1 text-sm nav-link font-bold">Sign up</a>
+                        </nav>
+                    </div>
+                    <div class="xl:hidden">
+                        <button type="button" class="mobile-nav__toggler inline-flex items-center justify-center p-2 rounded-md focus:outline-none transition duration-150 ease-in-out">
+                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-nav__wrapper">
+        <div class="mobile-nav__overlay mobile-nav__toggler"></div>
+        <!-- /.mobile-nav__overlay -->
+        <div class="mobile-nav__content">
+            <span class="mobile-nav__close mobile-nav__toggler">X</span>
+            <div class="logo-box">
+                <x-application-logo type="white"/>
+            </div>
+            <!-- /.logo-box -->
+            <div class="mobile-nav__container">
+
+            </div>
+            <!-- /.mobile-nav__container -->
+        </div>
+        <!-- /.mobile-nav__content -->
+    </div>
+</div>
