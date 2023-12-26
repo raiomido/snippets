@@ -1,0 +1,23 @@
+<div class="ml-3 relative">
+    <div>
+      <button @click="profileMenuOpen = !profileMenuOpen" class="max-w-xs flex items-center text-sm rounded-full text-white focus:outline-none focus:shadow-solid" id="user-menu" aria-label="User menu" aria-haspopup="true">
+        <img class="h-8 w-8 rounded-full" src="#" alt="">
+      </button>
+    </div>
+    <div x-show="profileMenuOpen" @click.away="profileMenuOpen = false" class="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg" style="display: none;">
+      <div class="py-1 rounded-md bg-white shadow-xs">
+        <div class="block px-4 py-2 text-xs cursor-pointer text-gray-700 hover:bg-gray-100">
+          Rai Omido
+        </div>
+        <a href="/dashboard" class="block px-4 py-2 text-xs cursor-pointer text-gray-700 hover:bg-gray-100">
+          Dashboard
+        </a>
+        <a href="/account" class="block px-4 py-2 text-xs cursor-pointer text-gray-700 hover:bg-gray-100">
+          Account
+        </a>
+        <div>
+          <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Sign out</a>
+      </div>
+    </div>
+  </div>
+</div>
